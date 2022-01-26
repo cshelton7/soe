@@ -9,6 +9,9 @@ app = flask.Flask(__name__)
 #hey flask, this function lives here!
 @app.route("/")
 def index():
-    return "Hello world"
+    #ginja
+    name = "Constance"
+    return flask.render_template("index.html", name=name) #grab html template
 
 app.run()
+
