@@ -12,3 +12,4 @@ app = flask.Flask(__name__)
 def index():
     return "Hello world"
 
+app.run()
