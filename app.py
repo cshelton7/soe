@@ -8,7 +8,6 @@ app = flask.Flask(__name__)
 #tell flask what function to run when flask app is visited
 #hey flask, this function lives here!
 @app.route("/")
-
 def index():
     return "Hello world"
 
